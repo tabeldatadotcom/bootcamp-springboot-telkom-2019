@@ -64,4 +64,10 @@ public class Buku {
     public void setTanggalTerbit(Date tanggalTerbit) {
         this.tanggalTerbit = tanggalTerbit;
     }
+
+    @Override
+    public String toString() {
+        return String.format("nama: %s, tahunTerbit: %s, tanggalTerbit:  %s",
+                this.nama, this.tahunTerbit, this.tanggalTerbit);
+    }
 }
