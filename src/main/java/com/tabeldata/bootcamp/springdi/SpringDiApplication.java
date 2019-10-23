@@ -32,6 +32,8 @@ public class SpringDiApplication {
             buku.setNama("Pemograman Java 8");
             repo.save(buku);
         }
+
+        repo.deleteById(2);
     }
 
 }
