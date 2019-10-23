@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  mysql:
+    image: tabeldata.ip-dynamic.com:8088/mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - mysql_network
+volumes:
+  mysql_data:
+networks:
+  mysql_network:
