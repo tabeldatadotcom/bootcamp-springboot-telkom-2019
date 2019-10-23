@@ -4,16 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class KelasA {
+public class KelasD {
 
     @Autowired
-    private KelasB kelasB;
+    private KelasE kelasE;
 
-    public void setKelasB(KelasB kelasB) {
-        this.kelasB = kelasB;
+    public KelasE getKelasE() {
+        return kelasE;
     }
 
-    public KelasB getKelasB() {
-        return kelasB;
+    public void setKelasE(KelasE kelasE) {
+        this.kelasE = kelasE;
     }
 }

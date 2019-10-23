@@ -1,7 +1,12 @@
 package com.tabeldata.bootcamp.springdi.bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class KelasB {
 
+    @Autowired
     private KelasC kelasC;
 
     public KelasC getKelasC() {
@@ -15,4 +20,6 @@ public class KelasB {
     public void printKelasC(){
         System.out.println(kelasC.getNamaLengkap());
     }
+
+
 }
